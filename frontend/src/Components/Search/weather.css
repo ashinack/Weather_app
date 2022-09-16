@@ -52,11 +52,15 @@ input {
     
 }
 .n-button{
-    background-color: #85b5e0;
+    background-color: #4fa1e8;
     color: #ffffff66;
     width: 4rem;
     height: 2.5rem;
+    border-radius: 5%;
+    color: #333;
+    /* font-weight: bold; */
     border: none;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
 }
 .n-button:hover{
     cursor: pointer;

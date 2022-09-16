@@ -8,28 +8,14 @@ const BASE_URL = `http://localhost:5000/api/`
 const Search = () => {
     const [data, setData] = useState({})
     const [place, setPlace] = useState("")
-    // const [type,setType] =useState("")
     const [placesearch, setplacesearch] = useState("")
     const [type1, setType1] = useState("");
+    
 
-    // console.log('rrr');
-    // console.log(type);
-    console.log(data.location);
+    
+    
 
-    // const currentArray = Object.entries(data).map(function (key) {
-    //     return <h3 value={key}>{data[key]}</h3>
-    // });
-    // const currentArray=[1,2,3]
-    // const entries = Object.entries(data);
-    // var convert = Object.keys(data).map(function (key) {
-    //     return {(key), data[key]};
-    // });
-    // const convert=data.toArray()
-    // console.log(convert);
-
-    // console.log(convert);  
-
-    // console.log(entries);
+    
 
     const options = [
         { value: '', text: 'select' },
@@ -56,12 +42,9 @@ const Search = () => {
 
         setplacesearch(place)
         setType1(type)
-        // console.log('butt');
-        // console.log(placesearch);
+        
     }
-    console.log('pppp');
-    // console.log(type1);
-    console.log(data.name);
+    
 
     useEffect(() => {
         if (type1.length) {
@@ -87,43 +70,16 @@ const Search = () => {
                 }
             })
                 .catch((err) => {
+                    
                     console.log(err)
                 })
         }
     }, [placesearch, type1])
 
-    console.log(place);
+    
     return (
         <>
-            {/* <input type="text" value={place} onChange={(e) => { setPlace(e.target.value) }}></input> */}
 
-            {/* <button type='button' onClick={handleclick}>click</button> */}
-            {/* <select onChange={(e) => setType(e.target.value)} >
-                <option>current</option>
-                <option >forecast</option>
-            </select> */}
-
-            {/* <div>
-                <select value={type} onChange={handleChange}>
-                    {options.map(option => (
-                        <option key={option.value} value={option.value}>
-                            {option.text}
-                        </option>
-                    ))}
-                </select>
-            </div> */}
-
-            {/* <div style={{ background: "red" }}>
-                {
-                    type1 === "forecast" ? (
-                        <h2>{data.sunrise}</h2>
-                    ) : (
-                        <h2>{data.name}</h2>
-                    )
-
-
-                }
-            </div> */}
             <div className='center-div'>
                 <Card className="text-center weather-card">
                     <div class='bgimag'>
@@ -145,11 +101,11 @@ const Search = () => {
                             </div>
 
                             <div className='but'>
-                                <button className='button n-button'  onClick={handleclick}>Check</button>
+                                <button className='button n-button' onClick={handleclick}>Submit</button>
                             </div>
                             <div>
                                 {
-                                    type1 === "forecast" ? (
+                                     type1 === "forecast" ? (
                                         <h6 style={{ fontFamily: 'monospace' }} className='mt-5'>sunrise:{data.sunrise}<br /><br />
 
                                             sunset:{data.sunset}<br /><br />
