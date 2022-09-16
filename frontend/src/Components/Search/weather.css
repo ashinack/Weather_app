@@ -1,0 +1,80 @@
+
+.weather-card{
+    width: 500px;
+    display: flex;
+    height: 400px;
+    --card-gradient: rgba(0, 0, 0, 0.8);
+        --card-gradient: #5e9ad9, #e271ad;
+        
+        --card-blend-mode: overlay;
+        
+    
+        /* background:linear-gradient(#5e9ad9,#e271ad); */
+        border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    background: url('../../imags/draw1.webp');
+    position: relative;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+}
+.center-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+
+}
+input {
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    /* display: flex; */
+    align-items: flex-start;
+    outline: none;
+    width: 200px;
+    height: 30p;
+    top: 250px;
+    margin-right: 15rem ;
+    padding: 9px;
+    color: #333;
+    /* -webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+}
+.sel{
+            margin-left: 6rem;
+            margin-top: -2.5rem;
+}
+.but{
+    margin-left: 24rem;
+    margin-top: -2.5rem;
+    width: 5rem;
+    
+}
+.n-button{
+    background-color: #85b5e0;
+    color: #ffffff66;
+    width: 4rem;
+    height: 2.5rem;
+    border: none;
+}
+.n-button:hover{
+    cursor: pointer;
+    /* background-color: whitesmoke; */
+    color: #85b5e0;
+    border: #85b5e0;
+        background: rgba(255, 255, 255, 0.4);
+}
+select{
+    background: #ffffff66;
+        border: none;
+        outline: none;
+        /* display: flex; */
+            width: 100px;
+            height: 30p;
+            top: 250px;
+            padding: 10px;
+                color: rgb(58, 58, 58);
+                /* -webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.5); */
+                box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+}
